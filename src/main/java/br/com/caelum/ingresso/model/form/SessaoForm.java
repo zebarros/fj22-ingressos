@@ -15,11 +15,14 @@ import br.com.caelum.ingresso.model.Sessao;
 public class SessaoForm {
 	@NotNull
 	private Integer salaId;
+	
 	@DateTimeFormat(pattern="HH:mm")
 	@NotNull
 	private LocalTime horario;
+	
 	@NotNull
 	private Integer filmeId;
+	
 	public Sessao toSessao(SalaDao salaDao, FilmeDao filmeDao){
 	Filme filme = filmeDao.findOne(filmeId);
 	Sala sala = salaDao.findOne(salaId);
