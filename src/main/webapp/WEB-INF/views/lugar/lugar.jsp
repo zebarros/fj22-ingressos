@@ -11,18 +11,21 @@
 
 			<div class="form-group">
 	            <label for="fileira">Fileira:</label>
-	            <input id="fileira" type="text" name="fileira" class="form-control" value="${lugarDto.fileira}">
+	            <input id="fileira" type="text" name="fileira"
+						class="form-control" value="${lugarDto.fileira}">
         	</div>
 			<div class="form-group">
 	            <label for="posicao">Posicao:</label>
-	            <input id="posicao" type="text" name="posicao" class="form-control" value="${lugarDto.posicao}">
+	            <input id="posicao" type="text" name="posicao"
+						class="form-control" value="${lugarDto.posicao}">
         	</div>
 
-
-			<div class="form-group">
+            <div class="form-group">
          		<button type="submit" class="btn btn-primary">Gravar</button>
 			</div>
-		</form>
+
+			
+			</form>
 		</div>
 
 	</jsp:body>
